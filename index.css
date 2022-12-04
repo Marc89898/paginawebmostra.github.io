@@ -1,0 +1,242 @@
+@import url('https://fonts.cdnfonts.com/css/caviar-dreams');
+@import url('https://fonts.cdnfonts.com/css/walkway');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    transition: 0.5s;
+    cursor: none;
+    text-decoration: none;
+}
+
+#particles-js{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    
+}
+#nav{
+    position: relative;
+    width: 100%;
+    background-color: white;
+    height: 80px;
+}
+#navegacion{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    height: 80px;
+}
+
+.cursor{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px  solid grey;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: 0.05s;
+    z-index: 1;
+}
+.cursor2{
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color: grey;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: -2s;
+    z-index: 1;
+}
+
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    
+}
+.letrastitulo{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20%;
+    color: white;
+    font-size: 120px;
+    font-family: 'Walkway Black', sans-serif;
+    
+
+} 
+.letrastitulo > h1{
+    
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+.btnbtn2{
+    position: fixed;
+    margin-left: 11%;
+    margin-top: 1%;
+    border: 2px solid black;
+    color: #000;
+    padding: 12px 20px;
+    
+}
+.btnbtn1{
+    position: fixed;
+    background: none;
+    border: 2px solid #000;
+    color: black;
+    padding: 12px 20px;
+    margin: 1%;
+    
+    
+}
+.btnbtn1:hover , .btnbtn2:hover{
+    color: #fff;
+    background-color: black;
+
+}
+  
+#botones1{
+  
+    display: flex;
+    background-color:white;
+    justify-content: right;
+    align-items: right;
+    margin-right: 3%;
+    
+}
+
+.botones{
+    display: flex;
+    background-color:white;
+    border: 2px solid black;
+    color: black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-left: 2%
+}
+.botones:hover{
+    scale: 120%;
+    border-radius: 5px;
+    color: black;
+}
+
+.primert{
+    display: flex;
+    color: white;
+    font-size: 50px;
+    margin: 5%;
+    padding-top: 5%;
+    font-family: 'Caviar Dreams', sans-serif;
+    position: relative;
+    
+}
+.bdt{
+    font-family: 'Caviar Dreams', sans-serif;
+    display: flex;
+    text-align: justify;
+    margin: 5%;
+    width: 50%;
+    height: 30vh;
+}
+.second{
+    background-image: url("Desktop\ -\ 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: white
+    
+}
+.container_slider{
+    display: flex;
+    width: 35vh;
+    height: 35vh;
+    margin-bottom: 20%;
+    margin-left: 60%;
+    margin-top: -5%;
+    align-items: right;
+    justify-content: right;
+    padding: 30px 10px;
+
+}
+input[type=radio]{
+    display: none;
+
+}
+.container{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d ;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+.cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+.card{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+#item-2:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-3,
+#item-3:checked ~ .cards #selector-2{
+    transform: translateX(-40%) scale(0.8);
+    opacity: 0.8;
+    z-index: 0;
+}
+#item-3:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-2,
+#item-2:checked ~ .cards #selector-3{
+    transform: translateX(40%) scale(0.8);
+    opacity: 0.8;
+    z-index: 0;
+}
+#item-1:checked ~ .cards #selector-1,
+#item-2:checked ~ .cards #selector-2,
+#item-3:checked ~ .cards #selector-3{
+    transform: translateX(0) scale(1);
+    z-index: 1;
+}
+
+
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="IniciarSesion.css">
+  <title>NEW WEBSITE</title>
+</head>
+
+<body>
+  <div id="nav">
+    <nav id="navegacion">
+      <a class="btnbtn1" href="index.html">PRINICPAL</a>
+      <a class="btnbtn2" href="Secundary.html">SHOP</a>
+
+      <div id="botones1">
+        <a class="botones" href="IniciarSesion.html">LOG IN</a>
+        <a class="botones" href="register.html">REGISTER</a>
+      </div>
+
+    </nav>
+  </div>
+
+
+  <div class="titol1">
+    <div class="titol2">
+      <h1>NEW WEBSITE</h1>
+    </div>
+  </div>
+
+  <div class="is"> 
+     
+    <div class="iniciar_sesion">
+
+      <div class="username">
+        <label id="usernamelabel" for="username">USERNAME</label>
+      </div>
+      <div class="inputu">
+        <input id="username" type="text">
+      </div>
+      <div class="password">
+        <label id="passwordlabel" for="password">PASSWORD</label>
+      </div>
+      <div class="inputp">
+        <input id="password" type="password">
+      </div>
+
+      <form class="sumbit" action="">
+        <button id="button">SUMBIT</button>
+      </form>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="main.js"></script>
+
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+  <script>
+    var cursor = document.querySelector(".cursor");
+    var cursor2 = document.querySelector(".cursor2");
+    document.addEventListener("mousemove", function (e) {
+      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
+  </script>

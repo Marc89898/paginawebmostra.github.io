@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="register.css">
+  <title>NEW WEBSITE</title>
+</head>
+
+<body>
+  <div id="nav">
+    <nav id="navegacion">
+      <a class="btnbtn1" href="index.html">PRINICPAL</a>
+      <a class="btnbtn2" href="Secundary.html">SHOP</a>
+
+      <div id="botones1">
+        <a class="botones" href="IniciarSesion.html">LOG IN</a>
+        <a class="botones" href="register.html">REGISTER</a>
+      </div>
+
+    </nav>
+  </div>
+
+  <div class="titol1">
+    <div class="titol2">
+      <h1>NEW WEBSITE</h1>
+    </div>
+  </div>
+
+
+  <div class="is">
+    <div class="iniciar_sesion">
+      <div class="wrapper">
+        <div class="correo">
+          <label for="correo">EMAIL</label>
+        </div>
+        <div class="correo1">
+          <input type="email" id="correo1">
+        </div>
+        <div class="contra">
+          <label for="contra" id="PASSWD">PASSWORD</label>
+        </div>
+        <div class="passw">
+          <input type="contra1">
+        </div>
+        <div class="usuario">
+          <label for="usuario" id="user">USER</label>
+        </div>
+        <div id="usuario">
+          <input type="text">
+        </div>
+        <div class="fechanacimiento">
+          <label for="nacimineto">DATE</label>
+        </div>
+        <div id="fecha">
+          <input type="date">
+        </div>
+        <form class="sumbit" action="">
+          <button id="button">SUMBIT</button>
+        </form>
+      </div>
+        
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="main.js"></script>
+
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+  <script>
+    var cursor = document.querySelector(".cursor");
+    var cursor2 = document.querySelector(".cursor2");
+    document.addEventListener("mousemove", function (e) {
+      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
+  </script>
